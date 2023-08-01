@@ -1,0 +1,6 @@
+Blacklist 
+
+Widgets;
+
+activate on every msg;
+

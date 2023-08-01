@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10px"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btn_bl_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bl_input"
+        android:layout_marginLeft="210dp"
+        android:text="ADD"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_back"
+        android:layout_alignParentBottom="true"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/bl_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="180dp"
+        android:textAlignment="center"
+        android:text="Blacklist" />
+
+    <ImageView
+        android:id="@+id/img_wa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        app:srcCompat="@drawable/whatsapp_100px" />
+
+
+    <ImageView
+        android:id="@+id/img_sms"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_wa"
+        app:srcCompat="@drawable/sms_100px" />
+
+    <ImageView
+        android:id="@+id/img_ig"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_sms"
+        app:srcCompat="@drawable/instagram_100px" />
+
+    <ImageView
+        android:id="@+id/img_sc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_ig"
+        app:srcCompat="@drawable/snapchat_100px" />
+
+    <ImageView
+        android:id="@+id/img_telegram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_sc"
+        app:srcCompat="@drawable/telegram_app_100px" />
+
+    <ImageView
+        android:id="@+id/img_signal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_telegram"
+        app:srcCompat="@drawable/signal_app_100px" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/img_signal"
+        app:srcCompat="@drawable/envelope_100px" />
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@id/img_mail"
+        app:srcCompat="@drawable/call_100px" />
+
+    <Switch
+        android:id="@+id/switch_wa"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_wa"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_sms"
+        android:layout_below="@id/switch_wa"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_sms"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_ig"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_telegram"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_sc"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_telegram"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_signal"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_ig"
+        android:layout_below="@id/switch_mail"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt_msg_color"
+        android:layout_width="150dp"
+        android:layout_marginLeft="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_phone"
+        android:text="msg Color:"
+        android:textAlignment="center"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_color_msg"
+        android:layout_width="150dp"
+        android:layout_marginLeft="180dp"
+        android:layout_below="@id/txt_msg_color"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_call_color"
+        android:layout_width="150dp"
+        android:layout_marginLeft="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_color_msg"
+        android:text="call Color:"
+        android:textAlignment="center"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_color_call"
+        android:layout_width="150dp"
+        android:layout_marginLeft="180dp"
+        android:layout_below="@id/txt_call_color"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
